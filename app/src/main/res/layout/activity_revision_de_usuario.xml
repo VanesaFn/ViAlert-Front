@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Revision_de_usuario">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/sp_rol_rev"
+            android:layout_width="206dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="10dp"
+            android:contextClickable="true"
+            android:entries="@array/roles"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="410dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginBottom="589dp"
+            android:autoText="false"
+            android:background="#FE9A46"
+            android:gravity="center"
+            android:text="Nombre Usuario"
+            android:textColor="#100F0F"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="202dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Rol de Usuario"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/sp_rol_rev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_correo_rev" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="208dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="20dp"
+            android:text="Correo Electronico"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_correo_rev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/txt_correo_rev"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="correo"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="23dp"
+            android:text="Reportes Solucionados"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tbl_rev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_rol_rev" />
+
+        <TableLayout
+            android:id="@+id/tbl_rev"
+            android:layout_width="349dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/bt_cancelar_rev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="29dp"
+            android:text="Cancelar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_guardar_rev"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tbl_rev" />
+
+        <Button
+            android:id="@+id/bt_guardar_rev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="29dp"
+            android:text="Guardar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_cancelar_rev"
+            app:layout_constraintTop_toBottomOf="@+id/tbl_rev" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
